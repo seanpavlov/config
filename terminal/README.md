@@ -14,6 +14,23 @@ Follow the instruction here: https://github.com/ohmyzsh/ohmyzsh
 4. Change history date format to: `HIST_STAMPS="yyyy-mm-dd"`
 5. Remove git plugin: `plugins=()`
 
-## 4. Change iTerm 2 Preferences
+## 4. Install Hack Nerd Font Mono
+Check: https://www.nerdfonts.com/
+
+Run: 
+```
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+```
+
+## 5. Install Starship prompt
+Check: https://starship.rs/
+
+Run: `brew install starship`
+
+Go to ``~/.zshrc` and add `eval "$(starship init zsh)"`
+
+## 6. Change iTerm 2 Preferences
 1. Under `Profiles > Text`, check `Use built-in Powerline glyphs`
-2. Create new profiles for each ssh?
+2. Under ``Profiles > Text`, change font to `Hack Nerd Font Mono`
+3. Create new profiles for each context (private, work etc)
